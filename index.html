@@ -1,15 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="noserver">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/dist/styles.css"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <title>Space Travel</title>
 </head>
-<body>
-    
-     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
-    <script src="/dist/js/bundle.js/"></script>
+
+<body ng-controller="mainCtrl">
+    <nav class="main-nav">
+        <h1>Space Travel</h1>
+        <div class="nav-sub-wrap">
+        <a ui-sref="home">Home</a>
+        <a ui-sref="spaceTravel">Future Travel</a>
+        <a ui-sref="nasaLandings">NASA Landings</a>
+        <a ui-sref="experience">Experience It</a>
+        </div>
+    </nav>
+
+    <ui-view></ui-view>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <!--<script src="/dist/js/bundle.js/"></script>-->
+    <!--<script src="./js/jquery-2.0.3.min.js"></script>-->
+    <script src="/js/app.js"></script>
+    <script src="/js/controllers/mainCtrl.js"></script>
+    <script src="/js/services/mainService.js"></script>
 </body>
+
 </html>
+
+
+<!--questions
+using font awesome how to use css one or sass one do I need to update gulp for fonts -->
+<!--<i class="fa fa-space-shuttle" aria-hidden="true"></i>-->
+<!--http://fontawesome.io/get-started/-->

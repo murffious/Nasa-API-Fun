@@ -12,7 +12,7 @@ gulp.task('hello', function (){
     console.log("hello from inside your computer. we have gulp off")
 })
 gulp.task('build-css', function (){
-    return gulp.src('./styles/*')
+    return gulp.src(['/styles/reset.css', './styles/*'])
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(cachebust.resources())
@@ -20,7 +20,7 @@ gulp.task('build-css', function (){
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./dist'));
 })
-gulp.task('build-js', [], function() {
+gulp.task('build-js', function() {
    return gulp.src('js/**/*.js')               
       .pipe(sourcemaps.init())
       .pipe(print())                        
@@ -38,5 +38,5 @@ gulp.task('build', [ 'build-css', 'build-js'], function() {
 });
 
 gulp.task('watch', function() {
-    return gulp.watch(['./index.html','./partials/*.html', './styles/*.*css', './js/**/*.js'], ['build']);
+    return gulp.watch(['./styles/*.*css', './js/**/*.js'], ['build']);
 });
