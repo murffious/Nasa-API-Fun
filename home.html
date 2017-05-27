@@ -1,19 +1,56 @@
 <!--<i class="fa fa-space-shuttle" aria-hidden="true"></i>-->
 <div class="home-wrapper">
-   
+
     <div class="picofday-wrapper">
         <div class="picofdaycontent">
-            <h1>Astronomy Picture of the Day</h1>
+            <h1>Explore the Universe with the Astronomy Picture of the Day</h1>
             <p class="date">{{daily.date}}</p>
             <img src="{{daily.hdurl}}">
-        <h1 class="title"> {{daily.title}}</h1>
-        <p>{{daily.explanation}}</p>
-        <p class="bottomhome">Click <a href="https://apod.nasa.gov/apod/archivepix.html">here</a> for past photos of the day.</p>
+            <h1 class="title"> {{daily.title}}</h1>
+            <p>{{daily.explanation}}</p>
+            <p class="bottomhome">Click <a href="https://apod.nasa.gov/apod/archivepix.html">here</a> for past photos of the day.</p>
         </div>
-        
+
     </div>
-     <div class="home-top">
-<h1 class="mission"><span >My Misson</span></h1>
-<p>This website is dedicatd to showing you some basic of whats going on in space travel.</p>
+    <div class="home-top">
+        <h1 class="mission"><span>My Misson</span></h1>
+        <p>This website is dedicatd to showing you the basics of whats going on in space travel.</p>
     </div>
 </div>
+
+<div class="peepsinspace">
+    <div class="spaceguy">
+        <img src="/img/guyinspace.jpg" width="300px">
+    </div>
+    <div class="spaceguy">
+        <h1>How Many People Are In Space Right Now?</h1>
+        <p class="numberoutthere">{{travelers.number}}</p>
+        <div>
+            <h2>Name & Spacecraft:</h2>
+            <span class="inspace">{{travelers.people[current].name}} -- {{travelers.people[current].craft}}</span>
+        </div>
+        <button ng-click="Prev()">Prev</button><button ng-click="Next()">Next</button>
+    </div>
+</div>
+
+<div id="footer">
+    <div class="connect">
+        <div>
+            <h1>FOLLOW ME TO SPACE</h1>
+            <div>
+                <a href="http://freewebsitetemplates.com/go/facebook/" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="http://pinterest.com/fwtemplates/" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footnote">
+        <div>
+            <p style="text-align: center;" s>&copy; 2017 BY PAUL MURFF | ALL RIGHTS RESERVED</p>
+        </div>
+        <div style="text-align: center;">
+            <br>
+
+        </div>
+    </div>

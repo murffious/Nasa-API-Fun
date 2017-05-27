@@ -1,1 +1,43 @@
-<h1>hello</h1>
+<div id="landings-wrapper">
+
+    <div class="top-landing">
+        <h1>Where has NASA been landing lately?</h1>
+
+        <div>
+            <video width="320" height="240" controls>
+                <source src="https://images-assets.nasa.gov/video/NHQ_2015_0807_TWAN/NHQ_2015_0807_TWAN~orig.mp4" type="video/mp4">
+            </video>
+        </div>
+        <img src="/img/Looney16.gif">
+        <p>Click a button to explore photos taken from the 3 the different rovers that have landed on Mars:<strong> Curiosity, Opportunity and Spirit.</strong></p>
+
+
+        <div class="rover-buttons">
+            <button ng-class="{active:item == 1}" ng-click="item = 1">'Curiousity' - Landed: 2012-08-06 </button>
+            <button i ng-class="{active:item == 2}" ng-click="item = 2">'Opportunity' - Landed: 2004-01-25</button>
+            <button i ng-class="{active:item == 3}" ng-click="item = 3">'Spirit' - Landed: 2004-01-04</button>
+        </div>
+        <hr/>
+    </div>
+
+    <div ng-init="item =  0">
+        <div class="picdisplay" ng-show='item == 1' ng-repeat="marsPhoto in marsPhotos">
+            <h1>Earth date photo was taken: {{marsPhoto.earth_date}}</h1>
+            <img src="{{marsPhoto.img_src}}">
+        </div>
+
+        <div class="picdisplay" ng-show='item == 2' ng-repeat="opportunityPhoto in opportunityPhotos">
+            <h1>Earth date photo was taken: {{opportunityPhoto.earth_date}}</h1>
+            <img src="{{opportunityPhoto.img_src}}">
+        </div>
+
+        <div class="picdisplay" ng-show='item == 3' ng-repeat="spiritPhoto in spiritPhotos">
+            <h1>Earth date photo was taken: {{spiritPhoto.earth_date}}</h1>
+            <img src="{{spiritPhoto.img_src}}">
+        </div>
+    </div>
+
+
+
+
+</div>

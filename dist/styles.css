@@ -97,12 +97,13 @@ input, select {
 
 nav {
   font-family: 'Orbitron', sans-serif;
-  background: url("/img/bg-home.jpg"); }
+  background: url("/img/bg-home.jpg");
+  display: flex; }
 
 nav h1 {
   padding-left: 35px;
   padding-top: 20px;
-  font-size: 45px; }
+  font-size: 35px; }
 
 /*---------------------Home Page-----------------------*/
 .home-top {
@@ -120,8 +121,8 @@ nav h1 {
   text-align: center; }
 
 .mission {
-  font-size: 25px;
-  padding-top: 50px;
+  font-size: 38px;
+  padding-top: 30px;
   font-family: serif; }
 
 .picofdaycontent {
@@ -134,7 +135,8 @@ nav h1 {
   color: white; }
 
 .picofdaycontent h1 {
-  padding-top: 20px; }
+  padding-top: 20px;
+  font-size: 1.8em; }
 
 .title {
   padding-top: 8px; }
@@ -146,6 +148,65 @@ nav h1 {
 .date {
   color: gray;
   padding-bottom: 15px; }
+
+.peepsinspace {
+  background: black;
+  color: white;
+  width: 100vw;
+  height: 350px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center; }
+
+.spaceguy {
+  margin-top: 60px;
+  margin-left: 20px;
+  font-size: 1.8em; }
+
+.numberoutthere {
+  text-align: center; }
+
+.inspace {
+  color: gray; }
+
+/*---------------Space Travel Page -----------*/
+.newsimage {
+  float: left;
+  margin-bottom: 40px; }
+
+.newsitem {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  clear: both;
+  border-bottom: 1px solid black;
+  margin-bottom: 30px;
+  font-family: 'Orbitron', sans-serif; }
+
+.latest {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 40px; }
+
+.more {
+  float: right; }
+
+/*--------------------Nasa Landings Page-------------*/
+#landings-wrapper {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 1.5;
+  letter-spacing: 1.5px; }
+
+.top-landing {
+  padding-top: 50px; }
+
+.top-landing h1 {
+  font-size: 3em; }
+
+.rover-buttons {
+  margin-left: 22%;
+  margin-top: 40px; }
 
 /* -------------------Experience Page----------------*/
 .expbackground {
@@ -172,23 +233,39 @@ nav h1 {
   height: 600px;
   margin-top: 35px; }
 
-#player {
-  height: 0;
-  width: 0; }
+/*--------------footer------------------*/
+#footer .connect div div {
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  width: 380px; }
 
-.speaker {
-  cursor: pointer;
-  display: block;
-  position: relative;
-  top: 150px;
-  left: 500px;
-  display: block; }
+#footer .connect div h1 {
+  color: #FFFFFF;
+  float: left;
+  font-family: audiowide-regular-webfont;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: 23px;
+  margin: 0;
+  padding: 8px 25px 0 0;
+  text-align: right;
+  text-transform: uppercase;
+  width: 525px; }
 
-.speakerplay {
-  background-position: 0 0; }
+#footer .connect div {
+  margin: 0 auto;
+  max-width: 960px;
+  overflow: hidden;
+  padding: 24px 0 0; }
 
-/*---------------Space Travel Page -----------*/
-.newsitem div li a img {
-  float: left; }
+#footer .connect {
+  background-color: #a3a3a3;
+  margin: 0;
+  height: 84px;
+  overflow: hidden;
+  padding: 0;
+  width: auto; }
 
 /*# sourceMappingURL=maps/styles.css.map */
