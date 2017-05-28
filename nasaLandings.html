@@ -2,20 +2,27 @@
 
     <div class="top-landing">
         <h1>Where has NASA been landing lately?</h1>
+        <div class="video-wrapper">
 
-        <div>
-            <video width="320" height="240" controls>
-                <source src="https://images-assets.nasa.gov/video/NHQ_2015_0807_TWAN/NHQ_2015_0807_TWAN~orig.mp4" type="video/mp4">
-            </video>
+            <div>
+                <video width="320" height="240" controls>
+                    <source src="https://images-assets.nasa.gov/video/NHQ_2015_0807_TWAN/NHQ_2015_0807_TWAN~orig.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            <div class="mars-question-answer"><span><span class="mars">MARS</span>, of course.</span>
+                <p>Click play on the video to watch news about the Mars rover the Curiosity!</p>
+            </div>
         </div>
-        <img src="/img/Looney16.gif">
+        <hr/>
+        <img class="looneytoon" src="/img/Looney16.gif">
         <p>Click a button to explore photos taken from the 3 the different rovers that have landed on Mars:<strong> Curiosity, Opportunity and Spirit.</strong></p>
 
 
         <div class="rover-buttons">
-            <button ng-class="{active:item == 1}" ng-click="item = 1">'Curiousity' - Landed: 2012-08-06 </button>
-            <button i ng-class="{active:item == 2}" ng-click="item = 2">'Opportunity' - Landed: 2004-01-25</button>
-            <button i ng-class="{active:item == 3}" ng-click="item = 3">'Spirit' - Landed: 2004-01-04</button>
+            <button class="rover-button" ng-class="{active:item == 1}" ng-click="item = 1">'Curiousity' - Landed: 2012-08-06 </button>
+            <button class="rover-button" i ng-class="{active:item == 2}" ng-click="item = 2">'Opportunity' - Landed: 2004-01-25</button>
+            <button class="rover-button" i ng-class="{active:item == 3}" ng-click="item = 3">'Spirit' - Landed: 2004-01-04</button>
         </div>
         <hr/>
     </div>

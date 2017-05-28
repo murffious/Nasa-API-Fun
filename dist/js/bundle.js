@@ -81,33 +81,6 @@ angular.module('noserver').controller("mainCtrl", function ($scope, mainService)
         $scope.current = ($scope.current - 1) % $scope.travelers.people.length;
     };
 });
-
-// $scope.going = false;
-
-// $scope.goEvent = function(){
-//    $scope.going = !$scope.going;
-//    if($scope.going){  
-//        $scope.go();
-//    }else{
-//        $scope.stop();
-//    }      
-// }
-//  $scope.one = true; // setting the first div visible when the page loads
-// $scope.two = false; // hidden
-// $scope.three = false; // hidden
-
-// // Now have three functions that change the ng-show based on the click
-// $scope.showOne = function (){
-//   $scope.one = true;
-//   $scope.two = false;
-//   $scope.three = false;
-// }
-
-// $scope.showTwo = function (){
-//   $scope.one = false;
-//   $scope.two = true; // now show this one
-//   $scope.three = false;
-// }
 'use strict';
 
 angular.module('noserver').service('experienceService', function () {
