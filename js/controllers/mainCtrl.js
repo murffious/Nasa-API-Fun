@@ -59,6 +59,10 @@ $scope.recOpportunity()
              $scope.current = ($scope.current - 1) % $scope.travelers.people.length ;
  }
 
-
+$(".rover-button").click(function() {
+    $('html, body').animate({
+        scrollTop: $(".picdisplay").offset().top
+    }, 2000);
+});
 })
 
