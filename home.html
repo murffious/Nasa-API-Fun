@@ -1,20 +1,22 @@
 <!--<i class="fa fa-space-shuttle" aria-hidden="true"></i>-->
 <div class="home-wrapper">
-
+<div class="parallax">
+<div class="enter">Enter Here- Scroll to Explore Space Travel</div>
+</div>
     <div class="picofday-wrapper">
         <div class="picofdaycontent">
             <h1>Explore the Universe with the Astronomy Picture of the Day</h1>
             <p class="date">{{daily.date}}</p>
             <img src="{{daily.hdurl}}">
             <h1 class="title"> {{daily.title}}</h1>
-            <p>{{daily.explanation}}</p>
+            <p class="explanation">{{daily.explanation}}</p>
             <p class="bottomhome">Click <a href="https://apod.nasa.gov/apod/archivepix.html">here</a> for past photos of the day.</p>
         </div>
 
     </div>
     <div class="home-top">
         <h1 class="mission"><span>My Misson</span></h1>
-        <p>This website is dedicatd to showing you the basics of whats going on in space travel.</p>
+        <p>This website is dedicatd to showing you the basics of what's going on in space travel.</p>
     </div>
 </div>
 
@@ -26,8 +28,8 @@
         <h1>How Many People Are In Space Right Now?</h1>
         <p class="numberoutthere">--{{travelers.number}}--</p>
         <div>
-            <h2>Name: <span class="inspace">{{travelers.people[current].name}}  </span>   Spacecraft:<span class="inspace"> {{travelers.people[current].craft}}</span></h2>
-           
+            <h2>Name: <span class="inspace">{{travelers.people[current].name}}  </span> Spacecraft:<span class="inspace"> {{travelers.people[current].craft}}</span></h2>
+
         </div>
         <button class="in-space" ng-click="Prev()">Prev</button><button class="in-space" ng-click="Next()">Next</button>
     </div>
@@ -35,25 +37,25 @@
 
 <div id="footer">
     <div class="connect">
-        
-            <div>
-                <h1 class="follow">FOLLOW ME THROUGH SPACE</h1>
-                <div class="social">
-                    <a href="https://www.facebook.com/paul.murff.7" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="https://twitter.com/murffious" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="https://plus.google.com/114771534061525101747" class="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    <a href="https://www.pinterest.com/murffious/" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                </div>
-           
-        </div>
-        </div>
-        <div class="footnote">
-            <br>
-            <div>
-                <p style="text-align: center;" >&copy; 2017 BY PAUL MURFF | ALL RIGHTS RESERVED</p>
-            </div>
-            <div style="text-align: center;">
-                <br>
 
+        <div>
+            <h1 class="follow">FOLLOW ME THROUGH SPACE</h1>
+            <div class="social">
+                <a href="https://www.facebook.com/paul.murff.7" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/murffious" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://plus.google.com/114771534061525101747" class="googleplus"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="https://www.pinterest.com/murffious/" class="pinterest"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
             </div>
+
         </div>
+    </div>
+    <div class="footnote">
+        <br>
+        <div>
+            <p style="text-align: center;">&copy; 2017 BY PAUL MURFF | ALL RIGHTS RESERVED</p>
+        </div>
+        <div style="text-align: center;">
+            <br>
+
+        </div>
+    </div>

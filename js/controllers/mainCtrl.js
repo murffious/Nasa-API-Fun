@@ -59,10 +59,12 @@ $scope.recOpportunity()
              $scope.current = ($scope.current - 1) % $scope.travelers.people.length ;
  }
 
-$(".rover-button").click(function() {
-    $('html, body').animate({
-        scrollTop: $(".picdisplay").offset().top
+
+$scope.opencontent = function (num) {
+ $scope.item = num; console.log($scope.item)
+$( 'body').animate({
+        scrollTop: $(".rover-buttons").offset().top
     }, 2000);
-});
+}
 })
 

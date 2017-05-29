@@ -83,6 +83,9 @@ input, select {
   box-sizing: border-box; }
 
 @import url("https://fonts.googleapis.com/css?family=Orbitron");
+body {
+  overflow-x: hidden; }
+
 /* --------------- Nav bar --------------*/
 .nav-sub-wrap {
   display: flex;
@@ -108,11 +111,15 @@ nav {
   height: 70px; }
 
 nav h1 {
-  padding-left: 85px;
-  padding-top: 15px;
-  margin-left: 110px;
   font-size: 28px;
-  padding-bottom: 10px; }
+  line-height: .75rem; }
+
+.rocketandtitle {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+  width: 30vw;
+  padding-left: 10vw; }
 
 /*---------------------Home Page-----------------------*/
 .home-top {
@@ -124,6 +131,31 @@ nav h1 {
   background: black;
   line-height: 1.5;
   letter-spacing: 2px; }
+
+.parallax {
+  /* The image used */
+  background-image: url("/img/nasa-43979.jpg");
+  /* Set a specific height */
+  height: 820px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position-y: -280px;
+  font-family: 'Orbitron', sans-serif; }
+
+.enter {
+  width: 400px;
+  height: 115px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+  line-height: 1.8em; }
 
 .home-top h1, .home-top p {
   color: white;
@@ -174,6 +206,9 @@ nav h1 {
   line-height: 1.1;
   letter-spacing: 2px; }
 
+.spaceguy h1 {
+  border-bottom: 1px solid white; }
+
 .numberoutthere {
   text-align: center;
   padding: 10px;
@@ -223,7 +258,17 @@ nav h1 {
   position: relative;
   top: 1px; }
 
+.explanation {
+  text-align: justify !important; }
+
 /*---------------Space Travel Page -----------*/
+.news-wrapper {
+  color: white;
+  background: url("/img/jason-blackeye-213258.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
 .newsimage {
   margin-bottom: 40px; }
 
@@ -232,7 +277,7 @@ nav h1 {
   margin-left: 20%;
   margin-right: 20%;
   clear: both;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
   margin-bottom: 30px;
   font-family: 'Orbitron', sans-serif;
   display: flex; }
@@ -246,19 +291,47 @@ nav h1 {
 
 .more {
   float: right;
-  margin-top: 50px; }
+  margin-top: 50px;
+  background: white;
+  width: 8rem;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #3c0f38;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: 10px 10px 5px #888888; }
+
+.more:hover {
+  background-color: #620031; }
 
 .news {
   margin-left: 40px;
   width: 70%; }
 
+.news h1 {
+  padding-bottom: 6px;
+  text-transform: uppercase; }
+
 /*--------------------Nasa Landings Page-------------*/
+.big-wrapper {
+  background: #070000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #070000, #4C0001, #070000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #070000, #4C0001, #070000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100%; }
+
 #landings-wrapper {
   width: 70%;
   margin-left: 15%;
   line-height: 1.5;
   letter-spacing: 1.5px;
-  font-family: 'Orbitron', sans-serif; }
+  font-family: 'Orbitron', sans-serif;
+  color: white; }
 
 .top-landing {
   padding-top: 50px; }
@@ -277,7 +350,8 @@ nav h1 {
   font-size: 1.3em; }
 
 .mars {
-  font-size: 1.9em; }
+  font-size: 1.9em;
+  color: gray; }
 
 .rover-buttons {
   margin-left: 22%;
@@ -355,7 +429,7 @@ nav h1 {
   font-size: 1.7em; }
 
 .soundcloudPlayer {
-  margin-left: 40%;
+  margin-left: 30%;
   width: 100%;
   height: 600px;
   margin-top: 35px; }

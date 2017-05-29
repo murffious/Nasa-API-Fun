@@ -18,7 +18,15 @@ angular.module('noserver', ['ui.router']).config(function ($stateProvider, $urlR
         templateUrl: '/experience.html'
     });
 });
-"use strict";
+'use strict';
+
+angular.module('noserver').directive('newsdir', function () {
+    return {
+
+        templateUrl: 'newsdir.html'
+    };
+});
+'use strict';
 
 angular.module('noserver').controller("mainCtrl", function ($scope, mainService) {
 
@@ -81,11 +89,12 @@ angular.module('noserver').controller("mainCtrl", function ($scope, mainService)
         $scope.current = ($scope.current - 1) % $scope.travelers.people.length;
     };
 
-    $(".rover-button").click(function () {
-        $('html, body').animate({
-            scrollTop: $(".picdisplay").offset().top
+    $scope.opencontent = function (num) {
+        $scope.item = num;console.log($scope.item);
+        $('body').animate({
+            scrollTop: $(".rover-buttons").offset().top
         }, 2000);
-    });
+    };
 });
 'use strict';
 
