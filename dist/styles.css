@@ -93,9 +93,8 @@ body {
   padding-bottom: 10px;
   width: 50%;
   padding-top: 5px;
-  margin-top: 14px;
-  margin-left: 70px;
-  background: rgba(0, 0, 0, 0.3); }
+  margin-top: 21px;
+  margin-left: 70px; }
 
 .nav-sub-wrap a {
   color: white;
@@ -104,7 +103,7 @@ body {
 
 nav {
   font-family: 'Orbitron', sans-serif;
-  background-image: url("/img/bg-home.jpg");
+  background-color: black;
   display: flex;
   line-height: 1.1;
   letter-spacing: 2px;
@@ -119,7 +118,8 @@ nav h1 {
   justify-content: space-around !important;
   align-items: center !important;
   width: 30vw;
-  padding-left: 10vw; }
+  padding-left: 10vw;
+  color: blueviolet; }
 
 /*---------------------Home Page-----------------------*/
 .home-top {
