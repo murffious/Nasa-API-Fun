@@ -2,10 +2,17 @@
 
 About
 
-A no server project using AngularJS to explore space using the NASA API.  
+A no server project using AngularJS to explore space using the NASA API. </br>
+API 1 - How many people are in space?</br>
+API 2 - Nasa Photo of the Day  </br>
+API 3 - 3 separate APIs from the Mars Rovers: Spirit, Curiosity, Opportunity</br>
 
-### Tech
-AngularJS SPA, Gulp, Babel, RESTful APIs
+News Section - Recent Space Travel News -- like how soon it will be commercialized (and by whom) and how much a ticket will cost </br>
+
+Experience Space Sounds with Soundcloud </br>
+
+### Tech</br>
+AngularJS SPA, Gulp, Babel, HTML5, JavaScript, CSS, RESTful (APIs)</br>
 
 ### Screenshots </br>
 ![pasted image at 2017_07_14 06_54 pm](https://user-images.githubusercontent.com/25558342/28903534-a225e692-77c2-11e7-8944-61ce6e034281.png) </br> </br>
