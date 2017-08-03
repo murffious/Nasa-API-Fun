@@ -1,6 +1,6 @@
 [# Nasa-API-Fun-]
 
-About
+### About
 
 A no server project using AngularJS to explore space using the NASA API. </br>
 API 1 - How many people are in space?</br>
